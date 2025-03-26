@@ -1,0 +1,62 @@
+<!DOCTYPE html>  <!-- DECLARES THE DOCUMENT TYPE AS HTML5 -->
+<html lang="en">  <!-- START OF THE HTML DOCUMENT WITH LANGUAGE SET TO ENGLISH -->
+<head>  <!-- START OF THE HEAD SECTION CONTAINING METADATA -->
+    <meta charset="UTF-8">  <!-- SETS THE CHARACTER ENCODING TO UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- MAKES THE PAGE RESPONSIVE ON ALL DEVICES -->
+    <title>Pizza Maker</title>  <!-- SETS THE TITLE OF THE WEB PAGE -->
+    <link rel="stylesheet" href="css/style.css">  <!-- LINKS TO AN EXTERNAL CSS FILE FOR STYLING -->
+    <script src="js/script.js" defer></script>  <!-- LINKS TO AN EXTERNAL JAVASCRIPT FILE AND DEFER ITS EXECUTION -->
+</head>  <!-- END OF HEAD SECTION -->
+
+<body>  <!-- START OF THE BODY SECTION WHERE CONTENT IS DISPLAYED -->
+
+<header>  <!-- START OF THE HEADER SECTION -->
+    <h1>🍕 ORDER YOUR PIZZA🍕</h1>  <!-- MAIN HEADING WITH PIZZA EMOJIS -->
+</header>  <!-- END OF HEADER SECTION -->
+
+<main>  <!-- START OF MAIN CONTENT SECTION -->
+    <form id="pizza-form">  <!-- START OF FORM WITH ID "PIZZA-FORM" -->
+        <label for="name">Your Name:</label>  <!-- LABEL FOR NAME INPUT FIELD -->
+        <input type="text" id="name" required>  <!-- TEXT INPUT FOR NAME, REQUIRED FIELD -->
+
+        <label for="size">Pizza Size:</label>  <!-- LABEL FOR PIZZA SIZE SELECTION -->
+        <select id="size" required>  <!-- DROPDOWN SELECT FOR PIZZA SIZE, REQUIRED -->
+            <option value="Small">Small</option>  <!-- SMALL SIZE OPTION -->
+            <option value="Medium">Medium</option>  <!-- MEDIUM SIZE OPTION -->
+            <option value="Large">Large</option>  <!-- LARGE SIZE OPTION -->
+        </select>  <!-- END OF SIZE SELECT -->
+
+        <fieldset>  <!-- GROUPS RELATED INPUTS TOGETHER -->
+            <legend>Toppings:*</legend>  <!-- LEGEND/TITLE FOR THE TOPPINGS SECTION -->
+            <label><input type="checkbox" value="Pepperoni"> Pepperoni</label>  <!-- CHECKBOX FOR PEPPERONI -->
+            <label><input type="checkbox" value="Mushrooms"> Mushrooms</label>  <!-- CHECKBOX FOR MUSHROOMS -->
+            <label><input type="checkbox" value="Onions"> Onions</label>  <!-- CHECKBOX FOR ONIONS -->
+            <label><input type="checkbox" value="Sausage"> Sausage</label>  <!-- CHECKBOX FOR SAUSAGE -->
+            <label><input type="checkbox" value="Bacon"> Bacon</label>  <!-- CHECKBOX FOR BACON -->
+            <label><input type="checkbox" value="Extra Cheese"> Extra Cheese</label>  <!-- CHECKBOX FOR EXTRA CHEESE -->
+            <label><input type="checkbox" value="Olives"> Olives</label>  <!-- CHECKBOX FOR OLIVES -->
+        </fieldset>  <!-- END OF FIELDSET -->
+
+        <label for="crust">Crust Type:</label>  <!-- LABEL FOR CRUST TYPE -->
+        <select id="crust" required>  <!-- DROPDOWN SELECT FOR CRUST TYPE, REQUIRED -->
+            <option value="Thin">Thin</option>  <!-- THIN CRUST OPTION -->
+            <option value="Thick">Thick</option>  <!-- THICK CRUST OPTION -->
+            <option value="Stuffed">Stuffed</option>  <!-- STUFFED CRUST OPTION -->
+            <option value="Gluten-Free">Gluten-Free</option>  <!-- GLUTEN-FREE CRUST OPTION -->
+        </select>  <!-- END OF CRUST SELECT -->
+
+        <label for="notes">Special Instructions:</label>  <!-- LABEL FOR SPECIAL INSTRUCTIONS -->
+        <textarea id="notes" rows="4"></textarea>  <!-- MULTI-LINE TEXT AREA FOR INSTRUCTIONS -->
+
+        <button type="submit">Order Pizza</button>  <!-- SUBMIT BUTTON TO PLACE THE ORDER -->
+    </form>  <!-- END OF FORM -->
+
+    <div id="output"></div>  <!-- EMPTY DIV TO DISPLAY OUTPUT -->
+</main>  <!-- END OF MAIN SECTION -->
+
+<footer>  <!-- START OF FOOTER SECTION -->
+    <p id="student-info"></p>  <!-- PARAGRAPH FOR STUDENT INFO (EMPTY FOR NOW) -->
+</footer>  <!-- END OF FOOTER SECTION -->
+
+</body>  <!-- END OF BODY SECTION -->
+</html>  <!-- END OF HTML DOCUMENT -->

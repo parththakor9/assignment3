@@ -1,0 +1,73 @@
+/* GENERAL STYLES */
+* {  /* APPLIES STYLES TO ALL ELEMENTS */
+    box-sizing: border-box;  /* INCLUDES PADDING AND BORDER IN ELEMENT'S TOTAL WIDTH/HEIGHT */
+    margin: 0;  /* REMOVES DEFAULT MARGIN */
+    padding: 0;  /* REMOVES DEFAULT PADDING */
+    font-family: Arial, sans-serif;  /* SETS FONT FAMILY TO ARIAL, FALLING BACK TO SANS-SERIF */
+}
+
+body {  /* STYLES FOR THE BODY ELEMENT */
+    line-height: 1.6;  /* SETS LINE HEIGHT FOR READABILITY */
+    background: linear-gradient(to right, #f4f4f4, #ffcc00, #00aaff);  /* APPLIES A LINEAR GRADIENT BACKGROUND */
+    color: #333;  /* SETS TEXT COLOR TO DARK GRAY */
+    padding: 20px;  /* ADDS PADDING AROUND THE BODY */
+}
+
+header, footer {  /* STYLES FOR BOTH HEADER AND FOOTER ELEMENTS */
+    text-align: center;  /* CENTERS THE TEXT */
+    background: #ff4500;  /* SETS BACKGROUND COLOR TO ORANGE-RED */
+    color: #fff;  /* SETS TEXT COLOR TO WHITE */
+    padding: 20px 0;  /* ADDS PADDING TO TOP AND BOTTOM ONLY */
+    margin-bottom: 20px;  /* ADDS MARGIN BELOW THE HEADER AND FOOTER */
+}
+
+h1 {  /* STYLES FOR THE H1 HEADINGS */
+    margin: 0;  /* REMOVES DEFAULT MARGIN */
+}
+
+main {  /* STYLES FOR THE MAIN CONTENT AREA */
+    max-width: 900px;  /* SETS MAXIMUM WIDTH TO 900PX */
+    margin: 0 auto;  /* CENTERS THE MAIN CONTENT HORIZONTALLY */
+    background: #fff;  /* SETS BACKGROUND COLOR TO WHITE */
+    padding: 20px;  /* ADDS PADDING INSIDE THE MAIN CONTAINER */
+    border-radius: 10px;  /* ROUNDS THE CORNERS WITH 10PX RADIUS */
+    box-shadow: 0 0 10px #ccc;  /* ADDS A LIGHT GRAY BOX SHADOW */
+}
+
+/* FORM STYLING */
+form label, form legend {  /* STYLES FOR FORM LABELS AND LEGENDS */
+    font-weight: bold;  /* MAKES THE TEXT BOLD */
+    display: block;  /* DISPLAYS THEM AS BLOCK ELEMENTS */
+    margin: 10px 0 5px;  /* ADDS MARGIN ABOVE AND BELOW */
+}
+
+input, select, textarea, button {  /* STYLES FOR FORM INPUTS, SELECT DROPDOWN, TEXTAREA, AND BUTTONS */
+    width: 100%;  /* MAKES THEM FULL-WIDTH */
+    padding: 10px;  /* ADDS PADDING INSIDE THE ELEMENTS */
+    margin: 5px 0;  /* ADDS MARGIN ABOVE AND BELOW */
+    border-radius: 5px;  /* ROUNDS THE CORNERS WITH 5PX RADIUS */
+    border: 1px solid #ccc;  /* ADDS A LIGHT GRAY BORDER */
+}
+
+button {  /* STYLES FOR BUTTONS */
+    background: #28a745;  /* SETS BACKGROUND COLOR TO GREEN */
+    color: white;  /* SETS TEXT COLOR TO WHITE */
+    cursor: pointer;  /* CHANGES CURSOR TO POINTER ON HOVER */
+    transition: 0.3s;  /* ADDS A SMOOTH TRANSITION EFFECT */
+}
+
+button:hover {  /* STYLES FOR BUTTONS ON HOVER */
+    background: #218838;  /* CHANGES BACKGROUND COLOR TO DARKER GREEN */
+}
+
+#output {  /* STYLES FOR THE OUTPUT DIV */
+    margin-top: 20px;  /* ADDS MARGIN ABOVE THE OUTPUT */
+    padding: 15px;  /* ADDS PADDING INSIDE THE OUTPUT */
+    background: #ffffe0;  /* SETS BACKGROUND COLOR TO LIGHT YELLOW */
+    border: 1px solid #ccc;  /* ADDS A LIGHT GRAY BORDER */
+    border-radius: 5px;  /* ROUNDS THE CORNERS WITH 5PX RADIUS */
+}
+
+footer p {  /* STYLES FOR PARAGRAPHS INSIDE THE FOOTER */
+    font-size: 14px;  /* SETS FONT SIZE TO 14PX */
+}
